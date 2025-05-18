@@ -270,7 +270,7 @@ export default function Home() {
       <main className="flex-1 py-8">
         <div className="container max-w-5xl">
           <div className="rounded-lg shadow-md bg-card p-6">
-            <h1 className="text-3xl font-bold text-center text-card-foreground mb-8">Feuille de Route: Du Web à l'IA</h1>
+            <h1 className="text-3xl font-bold text-center text-card-foreground mb-8">Feuille de Route: Du Web à l&apos;IA</h1>
             <div className="flex flex-col space-y-5">
               {phases.map(phase => (
                 <div key={phase.id} className="border rounded-lg overflow-hidden shadow-sm transition-all duration-300">
@@ -315,10 +315,10 @@ export default function Home() {
                                           rel="noopener noreferrer"
                                           className="underline hover:text-primary transition-colors"
                                         >
-                                          {resource}
+                                          {resource.replace("'", "&apos;")}
                                         </a>
                                       ) : (
-                                        resource
+                                        resource.replace("'", "&apos;")
                                       )}
                                     </li>
                                   ))}
@@ -341,7 +341,7 @@ export default function Home() {
                 <li>✅ <strong>Projets</strong> : Applique tes connaissances en créant des projets personnels dès le début</li>
                 <li>✅ <strong>Communauté</strong> : Rejoins des forums comme Stack Overflow, Reddit r/learnprogramming ou Discord</li>
                 <li>✅ <strong>Documentation</strong> : Apprends à lire et comprendre la documentation officielle</li>
-                <li>✅ <strong>Patience</strong> : La progression n'est pas linéaire, les frustrations font partie du processus</li>
+                <li>✅ <strong>Patience</strong> : La progression n&apos;est pas linéaire, les frustrations font partie du processus</li>
               </ul>
             </div>
           </div>
