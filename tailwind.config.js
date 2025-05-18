@@ -58,4 +58,10 @@ module.exports = {
     },
   },
   plugins: [],
+  safelist: [
+    "bg-background", "bg-card", "bg-primary", "bg-secondary", "bg-muted", "bg-accent", "bg-popover",
+    "text-foreground", "text-card-foreground", "text-primary", "text-secondary", "text-muted-foreground", "text-accent-foreground", "text-popover-foreground",
+    "border", "border-primary", "border-secondary", "border-muted", "border-accent", "border-popover",
+    "hover:text-primary", "hover:bg-primary", "hover:bg-secondary", "hover:text-accent",
+  ],
 } 
